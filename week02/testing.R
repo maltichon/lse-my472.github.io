@@ -1,0 +1,1 @@
+options(tibble.print_max = 11, tibble.print_min = 4)
