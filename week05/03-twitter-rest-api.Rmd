@@ -27,7 +27,7 @@ authentication <- list(consumer_key = "Y7gC6L4C23Uj2Dt8vCm2AtwnP",
 A more convenient approach, which importantly does not depict your individual tokens, can be to store this list once after you have pasted your keys and then to reload it when running some code. Store the list once with:
 
 ```{r}
-save(authentication, file = "myauthentication.rda")\
+save(authentication, file = "myauthentication.rda")
 ```
 
 To load the list containing your authentication whenever you run such a script, you can then simply add the following cell in the future (if the `myauthentication.rda` file is contained in the directory):
@@ -40,7 +40,7 @@ Lastly, if the cell below outputs `LSEnews` after running, we are good to go:
 
 ```{r}
 # Replace the app name with your own!
-twitter_token <- create_token(app = "enter your app name here", 
+twitter_token <- create_token(app = "enter your app name here",
                               consumer_key = authentication$consumer_key,
                               consumer_secret = authentication$consumer_secret,
                               access_token = authentication$access_token,
