@@ -18,16 +18,16 @@ library("tidyverse")
 First we need to authenticate. After your application has been approved, you can paste the consumer key, consumer secret, access token, and access token secret strings into the list below:
 
 ```{r}
-authentication <- list(consumer_key = "CONSUMER_KEY",
-                 consumer_secret = "CONSUMER_SECRET",
-                 access_token = "ACCESS_TOKEN",
-                 access_token_secret = "ACCESS_TOKEN_SECRET")
+authentication <- list(consumer_key = "Y7gC6L4C23Uj2Dt8vCm2AtwnP",
+                 consumer_secret = "32r1q72144BInxYwJPZJyhdXrjA9Rc0sJuW5R34ZmfGuurFJNt",
+                 access_token = "1453057025022337027-HEzZK41BdX2i5N23EmrFJR3wFValPG",
+                 access_token_secret = "HzNK9VmiFLb0iz6eMaDAEKaKBMcRx9M3HKNeKUcJY5OUT")
 ```
 
 A more convenient approach, which importantly does not depict your individual tokens, can be to store this list once after you have pasted your keys and then to reload it when running some code. Store the list once with:
 
-```{t}
-save(authentication, file = "myauthentication.rda")
+```{r}
+save(authentication, file = "myauthentication.rda")\
 ```
 
 To load the list containing your authentication whenever you run such a script, you can then simply add the following cell in the future (if the `myauthentication.rda` file is contained in the directory):
