@@ -41,7 +41,7 @@ save(authentication, file = "authentication.rda")
 To load the list containing your authentication whenever you run such a script, you can then simply add the following cell in the future (if the `authentication.rda` file is contained in the directory):
 
 ```{r}
-load("authentication.rda")
+load("myauthentication.rda")
 ```
 
 Lastly, enter your app name into the cell below. If the cell then outputs `LSEnews` after running, we are good to go:

@@ -58,6 +58,7 @@ The following code will get the last 1,000 tweets mentioning "brexit" and "fuel"
 ```{r}
 tweets <- search_tweets("brexit AND fuel", n = 1000)
 head(tweets)
+tweets$id
 ```
 
 What are the most popular hashtags?

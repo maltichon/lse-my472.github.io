@@ -202,3 +202,19 @@ ggplot(map.data) + geom_map(aes(map_id = region), map = map.data, fill = "grey90
         panel.grid.minor = element_blank(), 
         plot.background = element_blank()) 
 ```
+
+
+
+```{r}
+africa = world %>% 
+  filter(continent == "Africa", !is.na(iso_a2)) 
+```
+
+```{r}
+
+data(wrld_simpl)
+afr=wrld_simpl[wrld_simpl$REGION==2,]
+ 
+# We can visualize the region's boundaries with the plot function
+plot(afr)
+```
